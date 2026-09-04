@@ -1,0 +1,10 @@
+dist/
+node_modules/
+.next/
+.nx/
+.open-next/
+packages/*/dist/
+apps/*/dist/
+apps/server/worker-configuration.d.ts
+*.tsbuildinfo
+package-lock.json

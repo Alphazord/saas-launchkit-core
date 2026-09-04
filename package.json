@@ -1,0 +1,47 @@
+{
+  "name": "@repo/source",
+  "version": "0.0.0",
+  "license": "MIT",
+  "packageManager": "pnpm@9.15.4",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "nx run-many -t typecheck"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@nx/devkit": "23.0.1",
+    "@nx/js": "23.0.1",
+    "@nx/next": "^23.0.1",
+    "@nx/react": "^23.0.1",
+    "@swc-node/register": "1.11.1",
+    "@swc/cli": "~0.8.0",
+    "@swc/core": "1.15.8",
+    "@swc/helpers": "0.5.18",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^10.6.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "nx": "23.0.1",
+    "prettier": "^3.9.4",
+    "tslib": "^2.3.0",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.62.1",
+    "vitest": "^3.2.1"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "dependencies": {
+    "@opennextjs/cloudflare": "^1.20.1"
+  }
+}

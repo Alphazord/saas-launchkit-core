@@ -1,0 +1,14 @@
+{
+  "name": "@repo/api-endpoints",
+  "sourceRoot": "packages/api-endpoints/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx eslint src/",
+        "cwd": "packages/api-endpoints"
+      }
+    }
+  }
+}
